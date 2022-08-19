@@ -1,32 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="gradient1"></div>
+        <div className="gradient2"></div>
+        
+        <div className="head-wrapper">
+            <div className="text-wrapper">
+                <h1>Julio <span>C. S.</span> Coutinho</h1>
+                <p>Desenvolvedor Web <span>Full Stack</span></p>
+                <button>LinkedIn</button>
+            </div>
+            <img src="https://avatars.githubusercontent.com/u/90656852?v=4" alt="" />
+        </div>
+
+
+        <div className="section-wrapper">
+            <h2>Algumas de minhas habilidades</h2>
+            
+            <h3>Front-end</h3>
+            <div className="content-wrapper">
+    
+            </div>
+
+            <h3>Back-end</h3>
+            <div className="content-wrapper">
+    
+            </div>
+        </div>
+        
+
+        <div className="section-wrapper">
+            <h2>Meus Projetos</h2>
+    
+            <h3>Full Stack</h3>
+            <div className="content-wrapper">
+    
+            </div>
+    
+            <h3>Front-end</h3>
+            <div className="content-wrapper">
+    
+            </div>
+        </div>
+
+        <div className="section-wrapper">
+            <h2>Sobre mim</h2>
+            <p>
+                Sempre fui entusiasta de tecnologia e estou em transição de carreira para a área de programação web. Sou pós-graduado em engenharia de software e desenvolvo Frontend com JavaScript, HTML, CSS e React. Além disso, desenvolvo Backend com Node.js, Express e SQL. Tenho contato com desenvolvimento web há 11 anos como hobby e agora estou me profissionalizando na área.
+                Atuo a mais de 6 anos com cargo de gestão na área de manutenção.
+            </p>
+        </div>
     </div>
   )
 }
