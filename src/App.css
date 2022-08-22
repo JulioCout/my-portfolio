@@ -39,6 +39,10 @@ body {
   align-items: center;
 }
 
+.text-container button {
+  margin-top: 20px;
+}
+
 .text-container img {
   width: 200px;
   height: 200px;
@@ -56,12 +60,6 @@ body {
   font-size: 40px;
   line-height: 42px;
   color: #E2E2E5;
-}
-
-.text-container button {
-  width: 100px;
-  height: 30px;
-  margin-top: 35px;
 }
 
 .gradient1 {
