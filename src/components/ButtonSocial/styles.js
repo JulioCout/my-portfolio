@@ -50,4 +50,8 @@ svg {
   background-color: #0077b5;
 }
 
+:focus {
+  outline: none;
+}
+
 `

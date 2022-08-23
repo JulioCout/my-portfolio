@@ -1,6 +1,8 @@
 import './App.css'
-import { Button } from "./components/Button"
+import { ButtonSocial } from "./components/ButtonSocial"
 import { Skill } from "./components/Skill"
+import { Project } from "./components/Project"
+import { ButtonSmall } from "./components/ButtonSmall"
 
 function App() {
 
@@ -13,7 +15,7 @@ function App() {
         {
             icon: "./src/assets/css3.svg",
             title: "CSS",
-            description: "Desenvolvimento de sites fieis aos mais variados designs propostos pelo cliente ou empresa."
+            description: "Sites fiéis aos mais variados designs propostos pelo cliente ou empresa."
         },
         {
             icon: "./src/assets/javascript.svg",
@@ -61,7 +63,7 @@ function App() {
                 <h1>Olá! Eu sou o Julio.</h1>
                 <h2> <span>Full Stack</span> Web Developer</h2>
                 <a href="https://www.linkedin.com/in/juliocscoutinho/" target="_blank">
-                <Button />
+                <ButtonSocial />
                 </a>
             </div>
             <img src="./src/assets/Saly-13.png" className="character" alt="" />
@@ -85,7 +87,13 @@ function App() {
 
             <h3>Back-end</h3>
             <div className="content-wrapper">
-    
+            {backSkills.map(skill => (
+                    <Skill 
+                        icon={skill.icon}
+                        title={skill.title}
+                        description={skill.description}
+                    />
+                ))}
             </div>
         </div>
         
@@ -95,7 +103,11 @@ function App() {
     
             <h3>Full Stack</h3>
             <div className="content-wrapper">
-    
+                <Project 
+                    title="Projetos"
+                    description="teste"
+                    linkGit="https://github.com/JulioCout/Notes_Frontend"
+                />
             </div>
     
             <h3>Front-end</h3>
