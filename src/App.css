@@ -87,6 +87,11 @@ body {
   justify-content: center;
 }
 
+.about {
+  width: 500px;
+  margin: 15px 0 50px 100px;
+}
+
 .gradient1 {
   display: flex;
   position: fixed;

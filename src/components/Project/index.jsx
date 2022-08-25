@@ -6,9 +6,9 @@ export function Project({ title, description, linkDemo, linkGit }) {
 
     return(
         <Container>
-            <div class="card">
-                <div class="card-img"></div>
-                <ul class="social-media">
+            <div className="card">
+                <div className="card-img"></div>
+                <ul className="social-media">
                     <a href={linkDemo} target="_black">
                         <li>
                             <ButtonSmall />
