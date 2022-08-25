@@ -2,7 +2,6 @@ import './App.css'
 import { ButtonSocial } from "./components/ButtonSocial"
 import { Skill } from "./components/Skill"
 import { Project } from "./components/Project"
-import { ButtonSmall } from "./components/ButtonSmall"
 
 function App() {
 
@@ -47,6 +46,23 @@ function App() {
         }
     ]
 
+    const fullStackProjects = [
+        {
+            title: "Notes Frontend",
+            description: "Frontend de aplicação para guardar anotações e links úteis. Foi utilizado React e Styled Components para construção desse frontend",
+            linkDemo: "https://julionotes.netlify.app/",
+            linkGit: "https://github.com/JulioCout/Notes_Frontend",
+            thumbnail: "src/assets/thumbnails/notesfront-thumbnail.png",
+        },
+        {
+            title: "Notes Backend",
+            description: "Backend de aplicação para guardar anotações e links úteis. Foi utilizado NodeJS, Express, Sqlite e Jest, alem de outras tecnologias para construção desse Backend.",
+            linkDemo: "https://julionotes.netlify.app/",
+            linkGit: "https://github.com/JulioCout/Notes_Backend",
+            thumbnail: "src/assets/thumbnails/notesback-thumbnail.png",
+        }
+    ]
+
   return (
     <div className="App">
       {/* <div className="gradient1" ></div>
@@ -87,7 +103,7 @@ function App() {
 
             <h3>Back-end</h3>
             <div className="content-wrapper">
-            {backSkills.map(skill => (
+                {backSkills.map(skill => (
                     <Skill 
                         icon={skill.icon}
                         title={skill.title}
@@ -103,11 +119,15 @@ function App() {
     
             <h3>Full Stack</h3>
             <div className="content-wrapper">
-                <Project 
-                    title="Projetos"
-                    description="teste"
-                    linkGit="https://github.com/JulioCout/Notes_Frontend"
-                />
+                {fullStackProjects.map(project => (
+                    <Project 
+                        title={project.title}
+                        description={project.description}
+                        linkDemo={project.linkDemo}
+                        linkGit={project.linkGit}
+                        thumbnail={project.thumbnail}
+                    />
+                ))}
             </div>
     
             <h3>Front-end</h3>
