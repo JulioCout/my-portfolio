@@ -1,6 +1,5 @@
+import React from "react";
 import styled from "styled-components";
-
-
 
 export const Container = styled.div`
 /*Card */
@@ -20,11 +19,14 @@ export const Container = styled.div`
   position: absolute;
   transition: transform .3s ease-in-out;
   z-index: 2;
-  border-radius: 12px
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .card-img img{
-  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
    

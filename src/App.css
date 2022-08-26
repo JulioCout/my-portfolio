@@ -88,8 +88,13 @@ body {
 }
 
 .about {
-  width: 500px;
-  margin: 15px 0 50px 100px;
+  width: 580px;
+  margin: 15px 0 20px 100px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #edededee;
 }
 
 .gradient1 {

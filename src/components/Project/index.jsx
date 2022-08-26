@@ -6,7 +6,7 @@ export function Project({ title, description, linkDemo, linkGit, thumbnail }) {
     return(
         <Container>
             <div className="card">
-                <div className="card-img" ><img src={thumbnail} alt="" /></div>
+                <div className="card-img"><img src={thumbnail} alt="" /></div>
                 <ul className="button-list">
                     <a href={linkDemo} target="_black">
                         <li>
