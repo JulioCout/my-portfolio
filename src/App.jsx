@@ -7,22 +7,22 @@ function App() {
 
     const frontSkills = [
         {
-            icon: "./src/assets/html5.svg",
+            icon: "/src/assets/html5.svg",
             title: "HTML",
             description: "Desenvolvimento de sites completos."
         },
         {
-            icon: "./src/assets/css3.svg",
+            icon: "/src/assets/css3.svg",
             title: "CSS",
             description: "Sites fiéis aos mais variados designs propostos pelo cliente ou empresa."
         },
         {
-            icon: "./src/assets/javascript.svg",
+            icon: "/src/assets/javascript.svg",
             title: "Javascript",
             description: "Criação de funções mais avançadas em aplicações web com JavaScript."
         },
         {
-            icon: "./src/assets/reactjs.svg",
+            icon: "/src/assets/reactjs.svg",
             title: "React",
             description: "Desenvolvimento de aplicações para web."
         }
@@ -30,17 +30,17 @@ function App() {
 
     const backSkills = [
         {
-            icon: "./src/assets/javascript.svg",
+            icon: "/src/assets/javascript.svg",
             title: "Javascript",
             description: "Criação de funções mais avançadas em aplicações web com JavaScript."
         },
         {
-            icon: "./src/assets/nodejs.svg",
+            icon: "/src/assets/nodejs.svg",
             title: "Node Js",
             description: "Criação de páginas interativas mais robustas com acesso a banco de dados, como páginas de cadastro, catálogos e banco de informações."
         },
         {
-            icon: "./src/assets/mysql.svg",
+            icon: "/src/assets/mysql.svg",
             title: "MySql",
             description: "Criação e manipulação de banco de dados na linguagem SQL."
         }
@@ -52,39 +52,29 @@ function App() {
             description: "Frontend de aplicação para guardar anotações e links úteis. Foi utilizado React e Styled Components para construção desse frontend",
             linkDemo: "https://julionotes.netlify.app/",
             linkGit: "https://github.com/JulioCout/Notes_Frontend",
-            thumbnail: "src/assets/thumbnails/notesfront-thumbnail.png",
+            thumbnail: "/src/assets/thumbnails/notesfront-thumbnail.png",
         },
         {
             title: "Notes Backend",
             description: "Backend de aplicação para guardar anotações e links úteis. Foi utilizado NodeJS, Express, Sqlite e Jest, alem de outras tecnologias para construção desse Backend.",
             linkDemo: "https://julionotes.netlify.app/",
             linkGit: "https://github.com/JulioCout/Notes_Backend",
-            thumbnail: "src/assets/thumbnails/notesback-thumbnail.png",
+            thumbnail: "/src/assets/thumbnails/notesback-thumbnail.png",
         }
     ]
 
   return (
       <div className="App">
-      {/* <div className="gradient1" ></div>
-      <div className="gradient2" ></div> */}
-      {/* <img className="obj-1" src="./src/assets/SuperToroid-Purple-Glossy.svg" /> */}
-      
-      {/* <img className="obj-2" src="./src/assets/Sphere-White-Matte.svg" />
-      <img className="obj-3" src="./src/assets/Pill-Blue-Glossy.svg" />
-      <img className="obj-4" src="./src/assets/RoundCube-Orange-Glossy.svg" />
-    <img className="obj-5" src="./src/assets/SuperToroid-Yellow-Glossy.svg" /> */}
-    
         <div className="head-container">
             <div className="text-container">
-                <img src="./src/assets/profile-pic.png" alt="" />
+                <img src="/src/assets/profile-pic.png" alt="" />
                 <h1>Olá! Eu sou o Julio.</h1>
                 <h2> <span>Full Stack</span> Web Developer</h2>
                 <a href="https://www.linkedin.com/in/juliocscoutinho/" target="_blank">
                 <ButtonSocial />
                 </a>
             </div>
-            <img src="./src/assets/Saly-13.png" className="character" alt="" />
-            
+            <img src="/src/assets/Saly-13.png" className="character" alt="" />
         </div>
 
 
@@ -149,7 +139,7 @@ function App() {
             </p>
             </div>
             <div className="about-img-container">
-                <img src="./src/assets/Saly-13.png" className="character" alt="" />
+                <img src="/src/assets/Saly-13.png" className="character" alt="" />
             </div>
         </div>
     </div>

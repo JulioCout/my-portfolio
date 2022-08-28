@@ -53,7 +53,7 @@ export const Container = styled.div`
     display: block;
     text-align: center;
     color: #212121;
-    margin: 0 10px;
+    margin: 0 5px;
   }
   
   .card .content p {
