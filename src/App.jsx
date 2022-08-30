@@ -1,28 +1,43 @@
 import './App.css'
-import { ButtonSocial } from "./components/ButtonSocial"
+import { ButtonLinkedin } from "./components/ButtonLinkedin"
+import { ButtonGithub } from "./components/ButtonGithub"
 import { Skill } from "./components/Skill"
 import { Project } from "./components/Project"
+
+import profilePic from "./assets/profile-pic.png"
+import headerImg from "./assets/header-img.svg"
+import footerImg from "./assets/Saly-13.png"
+
+import html5Img from "./assets/html5.svg"
+import css3Img from "./assets/css3.svg"
+import javascriptImg from "./assets/javascript.svg"
+import reactjsImg from "./assets/reactjs.svg"
+import nodejsImg from "./assets/nodejs.svg"
+import mysqlImg from "./assets/mysql.svg"
+
+import notesfrontImg from "./assets/thumbnails/notesfront-thumbnail.png"
+import notesbackImg from "./assets/thumbnails/notesback-thumbnail.png"
 
 function App() {
 
     const frontSkills = [
         {
-            icon: "/src/assets/html5.svg",
+            icon: `${html5Img}`,
             title: "HTML",
             description: "Desenvolvimento de sites completos."
         },
         {
-            icon: "/src/assets/css3.svg",
+            icon: `${css3Img}`,
             title: "CSS",
             description: "Sites fiéis aos mais variados designs propostos pelo cliente ou empresa."
         },
         {
-            icon: "/src/assets/javascript.svg",
+            icon: `${javascriptImg}`,
             title: "Javascript",
             description: "Criação de funções mais avançadas em aplicações web com JavaScript."
         },
         {
-            icon: "/src/assets/reactjs.svg",
+            icon: `${reactjsImg}`,
             title: "React",
             description: "Desenvolvimento de aplicações para web."
         }
@@ -30,17 +45,17 @@ function App() {
 
     const backSkills = [
         {
-            icon: "/src/assets/javascript.svg",
+            icon: `${javascriptImg}`,
             title: "Javascript",
             description: "Criação de funções mais avançadas em aplicações web com JavaScript."
         },
         {
-            icon: "/src/assets/nodejs.svg",
+            icon: `${nodejsImg}`,
             title: "Node Js",
             description: "Criação de páginas interativas mais robustas com acesso a banco de dados, como páginas de cadastro, catálogos e banco de informações."
         },
         {
-            icon: "/src/assets/mysql.svg",
+            icon: `${mysqlImg}`,
             title: "MySql",
             description: "Criação e manipulação de banco de dados na linguagem SQL."
         }
@@ -52,33 +67,38 @@ function App() {
             description: "Frontend de aplicação para guardar anotações e links úteis. Foi utilizado React e Styled Components para construção desse frontend",
             linkDemo: "https://julionotes.netlify.app/",
             linkGit: "https://github.com/JulioCout/Notes_Frontend",
-            thumbnail: "/src/assets/thumbnails/notesfront-thumbnail.png",
+            thumbnail: `${notesfrontImg}`,
         },
         {
             title: "Notes Backend",
             description: "Backend de aplicação para guardar anotações e links úteis. Foi utilizado NodeJS, Express, Sqlite e Jest, alem de outras tecnologias para construção desse Backend.",
             linkDemo: "https://julionotes.netlify.app/",
             linkGit: "https://github.com/JulioCout/Notes_Backend",
-            thumbnail: "/src/assets/thumbnails/notesback-thumbnail.png",
+            thumbnail: `${notesbackImg}`,
         }
     ]
 
   return (
       <div className="App">
+
         <div className="head-container">
             <div className="text-container">
-                <img src="/src/assets/profile-pic.png" alt="" />
+                <img src={profilePic} alt="" />
                 <h1>Olá! Eu sou o Julio.</h1>
                 <h2> <span>Full Stack</span> Web Developer</h2>
                 <a href="https://www.linkedin.com/in/juliocscoutinho/" target="_blank">
-                <ButtonSocial />
+                <ButtonLinkedin />
                 </a>
+                <a href="https://github.com/JulioCout" target="_blank">
+                <ButtonGithub />
+                </a>
+
             </div>
-            <img src="/src/assets/Saly-13.png" className="character" alt="" />
+            <img src={headerImg} className="character" alt="" />
         </div>
 
 
-        <div className="section">
+        <div className="skills-section">
             <h2>Algumas de minhas habilidades</h2>
             
             <h3>Front-end</h3>
@@ -105,7 +125,7 @@ function App() {
         </div>
         
 
-        <div className="section">
+        <div className="projects-section">
             <h2>Meus Projetos</h2>
     
             <h3>Full Stack</h3>
@@ -121,10 +141,10 @@ function App() {
                 ))}
             </div>
     
-            <h3>Front-end</h3>
+            {/* <h3>Front-end</h3>
             <div className="content-wrapper">
-    
-            </div>
+            </div> */}
+
         </div>
 
         <div className="about-section">
@@ -139,7 +159,7 @@ function App() {
             </p>
             </div>
             <div className="about-img-container">
-                <img src="/src/assets/Saly-13.png" className="character" alt="" />
+                <img src={footerImg} className="character" alt="" />
             </div>
         </div>
     </div>

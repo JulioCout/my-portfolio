@@ -1,7 +1,7 @@
 import { Container } from "./styles";
 
 
-export function ButtonSocial() {
+export function ButtonLinkedin() {
 
     return(
     <Container>
