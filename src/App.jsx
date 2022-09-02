@@ -3,6 +3,7 @@ import { ButtonLinkedin } from "./components/ButtonLinkedin"
 import { ButtonGithub } from "./components/ButtonGithub"
 import { Skill } from "./components/Skill"
 import { Project } from "./components/Project"
+import { ProjectSection } from "./components/ProjectSection"
 
 import profilePic from "./assets/profile-pic.png"
 import headerImg from "./assets/header-img.svg"
@@ -124,6 +125,10 @@ function App() {
             </div>
         </div>
         
+
+        {/* <div className="secao-projeto">
+            <ProjectSection />
+        </div> */}
 
         <div className="projects-section">
             <h2>Meus Projetos</h2>

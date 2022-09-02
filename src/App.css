@@ -94,7 +94,7 @@ body {
 .skills-section h2, .projects-section h2, .about-section h2 {
   font-weight: 500;
   font-size: 32px;
-  line-height: 47px;  
+  line-height: 47px;
   color: #E2E2E5;
   margin-left: 100px;
 }
@@ -110,6 +110,10 @@ body {
 
 .skills-section {
   margin-top: -60px;
+}
+
+.secao-projeto {
+  align-self: center;
 }
 
 .projects-section {
