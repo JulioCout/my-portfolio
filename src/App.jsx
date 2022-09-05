@@ -16,8 +16,7 @@ import reactjsImg from "./assets/reactjs.svg"
 import nodejsImg from "./assets/nodejs.svg"
 import mysqlImg from "./assets/mysql.svg"
 
-import notesfrontImg from "./assets/thumbnails/notesfront-thumbnail.png"
-import notesbackImg from "./assets/thumbnails/notesback-thumbnail.png"
+
 
 function App() {
 
@@ -59,23 +58,6 @@ function App() {
             icon: `${mysqlImg}`,
             title: "MySql",
             description: "Criação e manipulação de banco de dados na linguagem SQL."
-        }
-    ]
-
-    const fullStackProjects = [
-        {
-            title: "Notes Frontend",
-            description: "Frontend de aplicação para guardar anotações e links úteis. Foi utilizado React e Styled Components para construção desse frontend",
-            linkDemo: "https://julionotes.netlify.app/",
-            linkGit: "https://github.com/JulioCout/Notes_Frontend",
-            thumbnail: `${notesfrontImg}`,
-        },
-        {
-            title: "Notes Backend",
-            description: "Backend de aplicação para guardar anotações e links úteis. Foi utilizado NodeJS, Express, Sqlite e Jest, alem de outras tecnologias para construção desse Backend.",
-            linkDemo: "https://julionotes.netlify.app/",
-            linkGit: "https://github.com/JulioCout/Notes_Backend",
-            thumbnail: `${notesbackImg}`,
         }
     ]
 
@@ -126,30 +108,8 @@ function App() {
         </div>
         
 
-        {/* <div className="secao-projeto">
-            <ProjectSection />
-        </div> */}
-
         <div className="projects-section">
-            <h2>Meus Projetos</h2>
-    
-            <h3>Full Stack</h3>
-            <div className="content-wrapper">
-                {fullStackProjects.map(project => (
-                    <Project 
-                        title={project.title}
-                        description={project.description}
-                        linkDemo={project.linkDemo}
-                        linkGit={project.linkGit}
-                        thumbnail={project.thumbnail}
-                    />
-                ))}
-            </div>
-    
-            {/* <h3>Front-end</h3>
-            <div className="content-wrapper">
-            </div> */}
-
+            <ProjectSection />
         </div>
 
         <div className="about-section">

@@ -83,7 +83,7 @@ body {
   color: #E2E2E5;
 }
 
-.skills-section, .projects-section {
+.skills-section {
   width: 85vw;
   padding: 60px 50px;
   align-self: center;
@@ -91,7 +91,7 @@ body {
   border-radius: 64px;
 }
 
-.skills-section h2, .projects-section h2, .about-section h2 {
+.skills-section h2, .about-section h2 {
   font-weight: 500;
   font-size: 32px;
   line-height: 47px;
@@ -99,7 +99,7 @@ body {
   margin-left: 100px;
 }
 
-.skills-section h3, .projects-section h3, .about-section h3 {
+.skills-section h3, .about-section h3 {
   font-weight: 300;
   font-size: 26px;
   line-height: 38px;
@@ -112,12 +112,9 @@ body {
   margin-top: -60px;
 }
 
-.secao-projeto {
-  align-self: center;
-}
-
 .projects-section {
-  margin-top: 60px;
+  align-self: center;
+  margin-top: 20px;
 }
 
 .about-section {

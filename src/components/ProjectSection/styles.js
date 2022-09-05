@@ -5,10 +5,9 @@ export const Container = styled.div`
     width: 85vw;
     display: flex;
     flex-direction: column;
-    background-color: #202020;
+    background-color: #121212;
     padding: 20px;
 }
-
 
 h1 {
     align-self: center;
@@ -25,40 +24,40 @@ h1 {
     flex-direction: row;
     gap: 20px;
     align-self: center;
+    margin-bottom: 15px;
 }
 
-button {
- align-items: center;
- margin: 20px 0 20px;
- background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
- border: 0;
- border-radius: 8px;
- /* box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px; */
- box-sizing: border-box;
- color: #FFFFFF;
- display: flex;
- font-family: Phantomsans, sans-serif;
- font-size: 18px;
- justify-content: center;
- line-height: 0.5em;
- max-width: 100%;
- min-width: 140px;
- padding: 3px;
- text-decoration: none;
- user-select: none;
- -webkit-user-select: none;
- touch-action: manipulation;
- white-space: nowrap;
- cursor: pointer;
- transition: all .3s;
+.buttons-container button {
+    align-items: center;
+    margin: 20px 0 20px;
+    background-image: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    border: 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 0.3em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .3s;
 }
 
-button:active,
-button:hover {
+.buttons-container button:active,
+.buttons-container button:hover {
  outline: 0;
 }
 
-button span {
+.buttons-container button span {
  background-color: rgb(5, 6, 45);
  padding: 16px 24px;
  border-radius: 6px;
@@ -67,15 +66,33 @@ button span {
  transition: 300ms;
 }
 
-button:hover span {
+.buttons-container .active {
  background: none;
 }
 
-button:active {
+.buttons-container button:active {
  transform: scale(0.9);
 }
 
-button:focus {
+.buttons-container button:focus {
   outline: none;
 }
+
+
+/* Cards */
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cards-container h1 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #edededee;
+    margin: 12px 0 7px;
+}
+
 `
