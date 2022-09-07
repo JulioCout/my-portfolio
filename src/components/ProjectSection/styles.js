@@ -7,6 +7,7 @@ export const Container = styled.div`
     flex-direction: column;
     background-color: #121212;
     padding: 20px;
+    min-height: 600px;
 }
 
 h1 {
@@ -22,7 +23,7 @@ h1 {
 .buttons-container {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    
     align-self: center;
     margin-bottom: 15px;
 }
@@ -32,7 +33,7 @@ h1 {
     margin: 20px 0 20px;
     background-image: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
     border: 0;
-    border-radius: 8px;
+    border-radius: 0;
     box-sizing: border-box;
     color: #FFFFFF;
     display: flex;
@@ -52,6 +53,14 @@ h1 {
     transition: all .3s;
 }
 
+.buttons-container button:first-child, button:first-child span {
+    border-radius: 8px 0 0 8px;
+}
+
+.buttons-container button:last-child, button:last-child span {
+    border-radius: 0 8px 8px 0;
+}
+
 .buttons-container button:active,
 .buttons-container button:hover {
  outline: 0;
@@ -60,7 +69,7 @@ h1 {
 .buttons-container button span {
  background-color: rgb(5, 6, 45);
  padding: 16px 24px;
- border-radius: 6px;
+ /* border-radius: 6px; */
  width: 100%;
  height: 100%;
  transition: 300ms;
@@ -85,6 +94,7 @@ h1 {
     flex-direction: row;
     gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .cards-container h1 {
