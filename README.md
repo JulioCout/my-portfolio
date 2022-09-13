@@ -6,6 +6,9 @@ Acesse em: https://juliocoutinho.dev
 
 ## Stack utilizada
 
++ HTML
++ CSS
++ JavaScript
 + React
 + Styled Components.
 
