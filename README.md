@@ -1,6 +1,7 @@
 # Portfolio
 
-Uma página para mostrar os meus principais trabalhos e tecnologias.  
+Uma página para mostrar os meus principais trabalhos e as principais tecnologias que utilizo.
+
 Acesse em: https://juliocoutinho.dev
 
 
