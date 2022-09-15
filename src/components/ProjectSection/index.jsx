@@ -7,6 +7,7 @@ import notesfrontImg from "../../assets/thumbnails/notesfront-thumbnail.png"
 import notesbackImg from "../../assets/thumbnails/notesback-thumbnail.png"
 import resposiveComponent from "../../assets/thumbnails/responsiveComponent-thumbnail.png"
 import imcComponent from "../../assets/thumbnails/imcComponent-thumbnail.png"
+import gitfav from "../../assets/thumbnails/gitfav-thumbnail.png"
 
 
 export function ProjectSection() {
@@ -35,6 +36,14 @@ export function ProjectSection() {
             linkGit: "https://github.com/JulioCout/responsive_grid",
             thumbnail: `${resposiveComponent}`,
             tag: "frontend"
+        },
+        {
+            title: "Github Favorites",
+            description: "Ferramenta que consome a API do Github para salvar seus perfis favoritos.",
+            linkDemo: "https://gitfavorites.netlify.app/",
+            linkGit: "https://github.com/JulioCout/gitfav",
+            thumbnail: `${gitfav}`,
+            tag: "tools"
         },
         {
             title: "Componente Cálculo de IMC",
@@ -68,7 +77,7 @@ export function ProjectSection() {
     return(
         <Container>
             <div className="component">
-                <h1>Meus Trabalhos</h1>
+                <h2>Meus Trabalhos</h2>
 
                 <div className="buttons-container">
                     <button onClick={() => handleTabSelect("all")}>

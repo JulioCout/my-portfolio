@@ -92,11 +92,20 @@ body {
 }
 
 .skills-section h2, .about-section h2 {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 47px;
-  color: #E2E2E5;
-  margin-left: 100px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 47px;
+    color: #E2E2E5;
+}
+
+.about-section h2 {
+    text-align: left;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 47px;
+    color: #E2E2E5;
+    margin-left: 100px;
 }
 
 .skills-section h3, .about-section h3 {

@@ -10,7 +10,7 @@ export const Container = styled.div`
     min-height: 600px;
 }
 
-h1 {
+h2 {
     align-self: center;
     font-weight: 500;
     font-size: 32px;
