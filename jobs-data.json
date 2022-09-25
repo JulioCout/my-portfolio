@@ -4,7 +4,7 @@
         "description": "Front End de aplicação para guardar anotações e links úteis. Foi utilizado React e Styled Components para construção desse frontend",
         "linkDemo": "https://julionotes.netlify.app/",
         "linkGit": "https://github.com/JulioCout/Notes_Frontend",
-        "thumbnail": "./assets/thumbnails/notesfront-thumbnail.png",
+        "thumbnail": "https://i.imgur.com/wDmBMVU.png",
         "tag": "frontend"
     },
     {
@@ -12,7 +12,7 @@
         "description": "Back End de aplicação para guardar anotações e links úteis. Foi utilizado NodeJS, Express, Sqlite e Jest, alem de outras tecnologias para construção desse Backend.",
         "linkDemo": "https://julionotes.netlify.app/",
         "linkGit": "https://github.com/JulioCout/Notes_Backend",
-        "thumbnail": "./assets/thumbnails/notesback-thumbnail.png",
+        "thumbnail": "https://i.imgur.com/n47MqKH.png",
         "tag": "backend"
     },
     {
@@ -20,7 +20,7 @@
         "description": "Front End mobile first de aplicação para divulgação de clinica médica e marcação de consultas. Foi utilizado TypeScript, React, Sass, Vite, entre outras tecnologias para construção desse front end.",
         "linkDemo": "https://juliodoctorcare.netlify.app/",
         "linkGit": "https://github.com/JulioCout/doctorCare",
-        "thumbnail": "./assets/thumbnails/doctorCare-thumbnail.png",
+        "thumbnail": "https://i.imgur.com/wSGwX1s.png",
         "tag": "frontend"
     },
     {
@@ -28,7 +28,7 @@
         "description": "Componente para exposição de cards que se adapta para até 3 tamanhos de telas.",
         "linkDemo": "https://jobs-component.netlify.app/",
         "linkGit": "https://github.com/JulioCout/responsive_grid",
-        "thumbnail": "./assets/thumbnails/responsiveComponent-thumbnail.png",
+        "thumbnail": "https://i.imgur.com/lfE0utf.png",
         "tag": "frontend"
     },
     {
@@ -36,7 +36,7 @@
         "description": "Ferramenta que consome a API do Github para salvar seus perfis favoritos.",
         "linkDemo": "https://gitfavorites.netlify.app/",
         "linkGit": "https://github.com/JulioCout/gitfav",
-        "thumbnail": "./assets/thumbnails/imcComponent-thumbnail.png",
+        "thumbnail": "https://i.imgur.com/uDsB9Dx.png",
         "tag": "tools"
     },
     {
@@ -44,7 +44,7 @@
         "description": "Componente para realização de cálculo de índice de massa corporal.",
         "linkDemo": "https://imc-component.netlify.app/",
         "linkGit": "https://github.com/JulioCout/imc-component",
-        "thumbnail": "./assets/thumbnails/gitfav-thumbnail.png",
+        "thumbnail": "https://i.imgur.com/ft547Cu.png",
         "tag": "tools"
     }
 ]
