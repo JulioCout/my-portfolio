@@ -5,7 +5,6 @@ import { Project } from "../Project"
 
 import projects from "../../../jobs-data.json"
 
-
 export function ProjectSection() {
 
     const [isActive, setIsActive] = useState("all")
