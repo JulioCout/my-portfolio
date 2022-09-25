@@ -3,57 +3,10 @@ import { useState } from "react"
 
 import { Project } from "../Project"
 
-import notesfrontImg from "../../assets/thumbnails/notesfront-thumbnail.png"
-import notesbackImg from "../../assets/thumbnails/notesback-thumbnail.png"
-import resposiveComponent from "../../assets/thumbnails/responsiveComponent-thumbnail.png"
-import imcComponent from "../../assets/thumbnails/imcComponent-thumbnail.png"
-import gitfav from "../../assets/thumbnails/gitfav-thumbnail.png"
+import projects from "../../../jobs-data.json"
 
 
 export function ProjectSection() {
-
-    const projects = [
-        {
-            title: "Notes Frontend",
-            description: "Frontend de aplicação para guardar anotações e links úteis. Foi utilizado React e Styled Components para construção desse frontend",
-            linkDemo: "https://julionotes.netlify.app/",
-            linkGit: "https://github.com/JulioCout/Notes_Frontend",
-            thumbnail: `${notesfrontImg}`,
-            tag: "frontend"
-        },
-        {
-            title: "Notes Backend",
-            description: "Backend de aplicação para guardar anotações e links úteis. Foi utilizado NodeJS, Express, Sqlite e Jest, alem de outras tecnologias para construção desse Backend.",
-            linkDemo: "https://julionotes.netlify.app/",
-            linkGit: "https://github.com/JulioCout/Notes_Backend",
-            thumbnail: `${notesbackImg}`,
-            tag: "backend"
-        },
-        {
-            title: "Componente de Cards Responsivo",
-            description: "Componente para exposição de cards que se adapta para até 3 tamanhos de telas.",
-            linkDemo: "https://jobs-component.netlify.app/",
-            linkGit: "https://github.com/JulioCout/responsive_grid",
-            thumbnail: `${resposiveComponent}`,
-            tag: "frontend"
-        },
-        {
-            title: "Github Favorites",
-            description: "Ferramenta que consome a API do Github para salvar seus perfis favoritos.",
-            linkDemo: "https://gitfavorites.netlify.app/",
-            linkGit: "https://github.com/JulioCout/gitfav",
-            thumbnail: `${gitfav}`,
-            tag: "tools"
-        },
-        {
-            title: "Componente Cálculo de IMC",
-            description: "Componente para realização de cálculo de índice de massa corporal.",
-            linkDemo: "https://imc-component.netlify.app/",
-            linkGit: "https://github.com/JulioCout/imc-component",
-            thumbnail: `${imcComponent}`,
-            tag: "tools"
-        }
-    ]
 
     const [isActive, setIsActive] = useState("all")
     const [cardsToShow, setCardsToShow] = useState(projects)
