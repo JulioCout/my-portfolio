@@ -24,6 +24,14 @@
         "tag": "frontend"
     },
     {
+        "title": "Galeria de Imagens",
+        "description": "Galeria de imagens mobile first que consome a API do Unsplash e exibe as imagens pesquisadas. Foi utilizado JavaScript, React, Sass, entre outras tecnologias para construção desta Galeria.",
+        "linkDemo": "https://julio-image-gallery.netlify.app/",
+        "linkGit": "https://github.com/JulioCout/image-gallery",
+        "thumbnail": "https://i.imgur.com/CIzIjB1.png",
+        "tag": "frontend"
+    },
+    {
         "title": "Componente de Cards Responsivo",
         "description": "Componente para exposição de cards que se adapta para até 3 tamanhos de telas.",
         "linkDemo": "https://jobs-component.netlify.app/",
