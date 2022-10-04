@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
 .head-container {
   background-image: url("./assets/banner-bg.png");
   margin-top: 0;
-  padding: 180px 0 100px 0;
+  padding: 150px 0 100px 0;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;

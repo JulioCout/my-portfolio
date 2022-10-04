@@ -2,56 +2,58 @@ import styled from "styled-components";
 
 export const Container = styled.button`
 
-  background-color: #fff;
-  border: none;
-  padding: 5px;
-  position: relative;
-  width: 7.2em;
-  height: 2em;
-  transition: 0.5s;
-  font-size: 17px;
-  border-radius: 0.4em;
+background: #0a66c2;
+ color: white;
+ font-family: inherit;
+ padding: 0.35em;
+ padding-left: 1.2em;
+ font-size: 17px;
+ font-weight: 500;
+ border-radius: 0.9em;
+ border: none;
+ letter-spacing: 0.05em;
+ display: flex;
+ align-items: center;
+ box-shadow: inset 0 0 1.6em -0.6em #0a66c2;
+ overflow: hidden;
+ position: relative;
+ height: 2.8em;
+ padding-right: 3.3em;
+ text-decoration: none;
+ cursor: pointer;
+ width: 160px;
 
-
-p {
-  position: absolute;
-  top: 0.4em;
-  left: 1.2em;
-  margin: 0;
-  padding: 0;
-  transition: .5s;
-  color: #0077b5;
-  
-  font-weight: 700;
+.icon {
+ background: white;
+ margin-left: 1em;
+ position: absolute;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 2.2em;
+ width: 2.2em;
+ border-radius: 0.7em;
+ box-shadow: 0.1em 0.1em 0.6em 0.2em #0a66c2;
+ right: 0.3em;
+ transition: all 0.3s;
 }
 
-svg {
-  position: absolute;
-  top: 0.45em;
-  right: 0.5em;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-  transition: 0.5s;
-  height: 1em;
-  fill: #fff
+:hover .icon {
+ width: calc(100% - 0.6em);
 }
 
-:hover p {
-  left: 0.6em;
-  color: #fff
+ .icon svg {
+ width: 1.1em;
+ transition: transform 0.3s;
+ color: #0a66c2;
 }
 
-:hover svg {
-  opacity: 1;
+:hover .icon svg {
+ transform: translateX(0.1em);
 }
 
-:hover {
-  background-color: #0077b5;
-}
-
-:focus {
-  outline: none;
+:active .icon {
+ transform: scale(0.95);
 }
 
 `

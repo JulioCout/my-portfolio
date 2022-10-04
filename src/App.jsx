@@ -1,8 +1,9 @@
 import './App.css'
 import { ButtonLinkedin } from "./components/ButtonLinkedin"
 import { ButtonGithub } from "./components/ButtonGithub"
+import { ButtonResume } from './components/ButtonResume'
 import { Skill } from "./components/Skill"
-import { Project } from "./components/Project"
+import { SkillsSection } from "./components/SkillsSection"
 import { ProjectSection } from "./components/ProjectSection"
 
 import profilePic from "./assets/profile-pic.png"
@@ -75,12 +76,15 @@ function App() {
                 <a href="https://github.com/JulioCout" target="_blank">
                 <ButtonGithub />
                 </a>
+                <a href="https://drive.google.com/file/d/1ZUcwcLg7b6cQgRdzVhhJgK_D58mE7XIO/view?usp=sharing" target="_blank">
+                <ButtonResume />
+                </a>
 
             </div>
             <img src={headerImg} className="character" alt="" />
         </div>
 
-
+        {/* <SkillsSection /> */}
         <div className="skills-section">
             <h2>Algumas de minhas habilidades</h2>
             
