@@ -28,7 +28,8 @@ export function ProjectSection() {
 
     return(
         <Container>
-            <div className="component">
+            <div className="projectSection-body">
+
                 <h2>Meus Trabalhos</h2>
 
                 <div className="buttons-container">
@@ -36,10 +37,10 @@ export function ProjectSection() {
                         <span className={ isActive === "all" ? "active" : "inactive" }>Todos</span>
                     </button>
                     <button onClick={() => handleTabSelect("frontend")}>
-                        <span className={ isActive === "frontend" ? "active" : "inactive" }>FrontEnd</span>
+                        <span className={ isActive === "frontend" ? "active" : "inactive" }>Front End</span>
                     </button>
                     <button onClick={() => handleTabSelect("backend")}>
-                        <span className={ isActive === "backend" ? "active" : "inactive" }>BackEnd</span>
+                        <span className={ isActive === "backend" ? "active" : "inactive" }>Back End</span>
                     </button>
                     <button onClick={() => handleTabSelect("tools")}>
                         <span className={ isActive === "tools" ? "active" : "inactive" }>Tools</span>
@@ -47,9 +48,9 @@ export function ProjectSection() {
                 </div>
 
                 <div className="cards-container">
-                    
                         {cardsToShow.map(project => (
-                            <Project 
+                            <Project
+                                key={project.id}
                                 title={project.title}
                                 description={project.description}
                                 linkDemo={project.linkDemo}
@@ -57,11 +58,6 @@ export function ProjectSection() {
                                 thumbnail={project.thumbnail}
                             />
                         ))}
-                    
-                    
-                
-
-
                 </div>
             </div>
         </Container>

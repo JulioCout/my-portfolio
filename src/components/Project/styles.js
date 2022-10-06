@@ -85,7 +85,7 @@ ul {
   list-style: none;
 }
    
-h1 {
+h2 {
   font-weight: 400;
   font-size: 24px;
   line-height: 35px;

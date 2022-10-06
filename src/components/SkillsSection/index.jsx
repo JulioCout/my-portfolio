@@ -15,71 +15,71 @@ export function SkillsSection() {
     
     const frontSkills = [
         {
+            id: 1,
             icon: `${html5Img}`,
-            title: "HTML",
             description: "Desenvolvimento de sites completos."
         },
         {
+            id: 2,
             icon: `${css3Img}`,
-            title: "CSS",
             description: "Sites fiéis aos mais variados designs propostos pelo cliente ou empresa."
         },
         {
+            id: 3,
             icon: `${javascriptImg}`,
-            title: "Javascript",
             description: "Criação de funções mais avançadas em aplicações web com JavaScript."
         },
         {
+            id: 4,
             icon: `${reactjsImg}`,
-            title: "React",
-            description: "Desenvolvimento de aplicações para web."
+            description: "Desenvolvimento de aplicações para web com React."
         }
     ]
 
     const backSkills = [
         {
-            icon: `${javascriptImg}`,
-            title: "Javascript",
-            description: "Criação de funções mais avançadas em aplicações web com JavaScript."
-        },
-        {
+            id: 1,
             icon: `${nodejsImg}`,
-            title: "Node Js",
-            description: "Criação de páginas interativas mais robustas com acesso a banco de dados, como páginas de cadastro, catálogos e banco de informações."
+            description: "Criação de páginas mais robustas com acesso a banco de dados."
         },
         {
+            id: 2,
             icon: `${mysqlImg}`,
-            title: "MySql",
             description: "Criação e manipulação de banco de dados na linguagem SQL."
         }
     ]
 
     return(
         <Container>
-            <div className="skills-section-body">
-            <h2>Algumas de minhas habilidades</h2>
-            
-            <h3>Front-end</h3>
-            <div className="content-wrapper">
-                {frontSkills.map(skill => (
-                    <Skill 
-                        icon={skill.icon}
-                        title={skill.title}
-                        description={skill.description}
-                    />
-                ))}
-            </div>
+            <div className="skillsSection-body">
+                
+                <h2>Minhas Habilidades</h2>
 
-            <h3>Back-end</h3>
-            <div className="content-wrapper">
-                {backSkills.map(skill => (
-                    <Skill 
-                        icon={skill.icon}
-                        title={skill.title}
-                        description={skill.description}
-                    />
-                ))}
-            </div>
+                <div className="skills-content">
+                    <div className="content-wrapper">
+                        <h3>Front-end</h3>
+                        {frontSkills.map(skill => (
+                            <Skill
+                                key={skill.id}
+                                icon={skill.icon}
+                                description={skill.description}
+                            />
+                        ))}
+                    </div>
+
+                    <div className="content-wrapper">
+                        <h3>Back-end</h3>
+                        {backSkills.map(skill => (
+                            <Skill
+                                key={skill.id}
+                                icon={skill.icon}
+                                title={skill.title}
+                                description={skill.description}
+                            />
+                        ))}
+                    </div>
+                </div>
+                
         </div>
         </Container>
     )

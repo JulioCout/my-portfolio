@@ -26,7 +26,7 @@ export function Project({ title, description, linkDemo, linkGit, thumbnail }) {
                     </a>
                 </ul>
             </div>
-            <h1>{ title } </h1>
+            <h2>{ title } </h2>
             <p>{ description }</p>
         </Container>
     )
