@@ -10,11 +10,11 @@ export function AboutSection() {
                 <div className="text-container">
                     <h2>Sobre mim</h2>
                     <p className="about-text">
-                    Sempre fui entusiasta de tecnologia e estou em transição de carreira para a área de programação web. Sou pós-graduado em engenharia de software e desenvolvo Frontend com JavaScript, HTML, CSS e React. Além disso, desenvolvo Backend com Node.js, Express e SQL. Tenho contato com desenvolvimento web há 11 anos como hobby e agora estou me profissionalizando na área.
+                        Pós-Graduado em Engenharia de Software com experiência em projetos para Web com foco em Front End com JavaScript, HTML, CSS e React JS. Além disso, possuo conhecimentos em Scrum, TypeScript, Git, Sass, Styled Components, Figma, NodeJs, SQL entre outras tecnologias e bibliotecas.
                     </p>
                     
                     <p className="about-text">
-                        Atuo a mais de 6 anos com cargo de gestão na área de manutenção, e essa experiência me fez desenvolver alta capacidade de resolução de conflitos, com senso de prioridade e comunicação assertiva.
+                        Possuo conhecimento na área de desenvolvimento web desde 2011, quando era Web Designer e criava sites como freelancer. Atualmente estou me especializando em JavaScript para regressar a área de desenvolvimento web. Nos últimos seis anos atuei na área de supervisão de manutenção e automação.
                     </p>
                 </div>
 
