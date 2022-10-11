@@ -6,12 +6,18 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    padding: 50px 0 50px;
+    padding: 100px 0 50px;
     background-color: #161616;
     border-radius: 64px;
     width: 100vw;
 
     margin-top: -50px;
+  }
+
+  .skills-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
   .content-wrapper {
@@ -30,7 +36,7 @@ export const Container = styled.div`
     }
 
     .skills-content {
-      display: flex;
+      flex-direction: row;
       gap: 100px;
     }
   }

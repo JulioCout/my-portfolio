@@ -8,14 +8,14 @@ import { ButtonResume } from "../ButtonResume";
 import headerImg from "../../assets/header-img.svg"
 import profilePic from "../../assets/profile-pic.png"
 
-export function HeaderSection() {
+export function HeaderSection({ globalLangPortuguese }) {
     return(
         <Container>
-            <div className="head-container">
+            <div id="init" className="head-container">
                 <div className="text-container">
 
                     <img src={profilePic} className="profile-pic" alt="" />
-                    <h1>Olá! Eu sou o Julio.</h1>
+                    <h1>{globalLangPortuguese ? "Olá! Eu sou o Julio." : "Hello! I'am Julio."} </h1>
                     <h2> <span>Full Stack</span> Web Developer</h2>
 
                     <div className="buttons-wrapper">
@@ -26,7 +26,7 @@ export function HeaderSection() {
                         <ButtonGithub />
                         </a>
                         <a href="https://drive.google.com/file/d/1ZUcwcLg7b6cQgRdzVhhJgK_D58mE7XIO/view?usp=sharing" target="_blank">
-                        <ButtonResume />
+                        <ButtonResume globalLangPortuguese={globalLangPortuguese} />
                         </a>
                     </div>
 

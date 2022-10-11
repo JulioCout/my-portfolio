@@ -5,7 +5,7 @@ import { Project } from "../Project"
 
 import projects from "../../../jobs-data.json"
 
-export function ProjectSection() {
+export function ProjectSection({ globalLangPortuguese }) {
 
     const [isActive, setIsActive] = useState("all")
     const [cardsToShow, setCardsToShow] = useState(projects)
@@ -28,22 +28,30 @@ export function ProjectSection() {
 
     return(
         <Container>
-            <div className="projectSection-body">
+            <div id="projects" className="projectSection-body">
 
-                <h2>Meus Trabalhos</h2>
+                <h2>{globalLangPortuguese ? "Meus Trabalhos" : "My Projects"}</h2>
 
                 <div className="buttons-container">
                     <button onClick={() => handleTabSelect("all")}>
-                        <span className={ isActive === "all" ? "active" : "inactive" }>Todos</span>
+                        <span className={ isActive === "all" ? "active" : "inactive" }>
+                            {globalLangPortuguese ? "Todos" : "All"}
+                        </span>
                     </button>
                     <button onClick={() => handleTabSelect("frontend")}>
-                        <span className={ isActive === "frontend" ? "active" : "inactive" }>Front End</span>
+                        <span className={ isActive === "frontend" ? "active" : "inactive" }>
+                            Front End
+                        </span>
                     </button>
                     <button onClick={() => handleTabSelect("backend")}>
-                        <span className={ isActive === "backend" ? "active" : "inactive" }>Back End</span>
+                        <span className={ isActive === "backend" ? "active" : "inactive" }>
+                            Back End
+                        </span>
                     </button>
                     <button onClick={() => handleTabSelect("tools")}>
-                        <span className={ isActive === "tools" ? "active" : "inactive" }>Tools</span>
+                        <span className={ isActive === "tools" ? "active" : "inactive" }>
+                            Tools
+                        </span>
                     </button>                   
                 </div>
 
@@ -51,8 +59,8 @@ export function ProjectSection() {
                         {cardsToShow.map(project => (
                             <Project
                                 key={project.id}
-                                title={project.title}
-                                description={project.description}
+                                title={globalLangPortuguese ? project.titlePT : project.titleEN}
+                                description={globalLangPortuguese ? project.descriptionPT : project.descriptionEN}
                                 linkDemo={project.linkDemo}
                                 linkGit={project.linkGit}
                                 thumbnail={project.thumbnail}

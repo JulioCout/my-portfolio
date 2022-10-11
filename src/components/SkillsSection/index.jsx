@@ -11,28 +11,32 @@ import mysqlImg from "../../assets/mysql.svg"
 
 
 
-export function SkillsSection() {
+export function SkillsSection({ globalLangPortuguese }) {
     
     const frontSkills = [
         {
             id: 1,
             icon: `${html5Img}`,
-            description: "Desenvolvimento de sites completos."
+            descriptionPT: "Desenvolvimento de sites completos.",
+            descriptionEN: "Development of complete websites."
         },
         {
             id: 2,
             icon: `${css3Img}`,
-            description: "Sites fiéis aos mais variados designs propostos pelo cliente ou empresa."
+            descriptionPT: "Sites fiéis aos mais variados designs propostos pelo cliente ou empresa.",
+            descriptionEN: "Webites identical to the most varied projects proposed by the company."
         },
         {
             id: 3,
             icon: `${javascriptImg}`,
-            description: "Criação de funções mais avançadas em aplicações web com JavaScript."
+            descriptionPT: "Criação de funções mais avançadas em aplicações web com JavaScript.",
+            descriptionEN: "Creating more advanced functions in web applications using JavaScript."
         },
         {
             id: 4,
             icon: `${reactjsImg}`,
-            description: "Desenvolvimento de aplicações para web com React."
+            descriptionPT: "Desenvolvimento de aplicações para web com React.",
+            descriptionEN: "Development of web applications with React."
         }
     ]
 
@@ -40,41 +44,43 @@ export function SkillsSection() {
         {
             id: 1,
             icon: `${nodejsImg}`,
-            description: "Criação de páginas mais robustas com acesso a banco de dados."
+            descriptionPT: "Criação de páginas mais robustas com acesso a banco de dados.",
+            descriptionEN: "Creation of more robust pages with database access."
         },
         {
             id: 2,
             icon: `${mysqlImg}`,
-            description: "Criação e manipulação de banco de dados na linguagem SQL."
+            descriptionPT: "Criação e manipulação de banco de dados na linguagem SQL.",
+            descriptionEN: "Creation and manipulation of databases in SQL language."
         }
     ]
 
     return(
         <Container>
-            <div className="skillsSection-body">
+            <div id="skills" className="skillsSection-body">
                 
-                <h2>Minhas Habilidades</h2>
+                <h2>{globalLangPortuguese ? "Minhas Habilidades" : "My Skills"}</h2>
 
                 <div className="skills-content">
                     <div className="content-wrapper">
-                        <h3>Front-end</h3>
+                        <h3>Front End</h3>
                         {frontSkills.map(skill => (
                             <Skill
                                 key={skill.id}
                                 icon={skill.icon}
-                                description={skill.description}
+                                description={globalLangPortuguese? skill.descriptionPT : skill.descriptionEN}
                             />
                         ))}
                     </div>
 
                     <div className="content-wrapper">
-                        <h3>Back-end</h3>
+                        <h3>Back End</h3>
                         {backSkills.map(skill => (
                             <Skill
                                 key={skill.id}
                                 icon={skill.icon}
                                 title={skill.title}
-                                description={skill.description}
+                                description={globalLangPortuguese? skill.descriptionPT : skill.descriptionEN}
                             />
                         ))}
                     </div>

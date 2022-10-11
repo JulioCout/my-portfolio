@@ -6,6 +6,7 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         width: 100vw;
         background-color: #0294b7;
         background-image: linear-gradient(19deg, #4A2FBD 20%, #0294b7 100%);
@@ -30,6 +31,19 @@ export const Container = styled.div`
     img {
         width: 375px;
         height: 375px;
+        animation: updown 3s linear infinite;
+    }
+
+    @keyframes updown {
+        0% {
+            transform: translateY(-20px);
+        }
+        50% {
+            transform: translateY(20px);
+        }
+        100% {
+            transform: translateY(-20px);
+        }
     }
 
     @media screen and (min-width: 750px) {

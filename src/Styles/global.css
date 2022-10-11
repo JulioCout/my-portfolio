@@ -5,11 +5,30 @@
     text-decoration: none;
   }
   
-  body {
-    background-color: #121212;
-    font-size: 26.5%;
-    font-family: 'Lato', sans-serif;
-    color: #F9FAFB;
-    display: flex;
-    flex-direction: column;
-  }
+body {
+  background-color: #121212;
+  font-size: 26.5%;
+  font-family: 'Lato', sans-serif;
+  color: #F9FAFB;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: hsl(0, 0%, 8%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: hsla(0, 0%, 100%, 0.658);
+}
