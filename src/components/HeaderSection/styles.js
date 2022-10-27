@@ -15,6 +15,7 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .text-container {
@@ -43,37 +44,19 @@ export const Container = styled.div`
         gap: 15px;
     }
 
-    .character {
-        width: 450px;
-        height: 450px;
-        display: none;
-        animation: updown 3s linear infinite;
-    }
-
-    @keyframes updown {
-        0% {
-            transform: translateY(-20px);
-        }
-        50% {
-            transform: translateY(20px);
-        }
-        100% {
-            transform: translateY(-20px);
-        }
-    }
-
     @media screen and (min-width: 750px) {
         .head-container {
-            background-position: top center;
+            background-position: bottom right;
             flex-direction: row;
             gap: 100px;
             padding: 100px 0 100px;
+            height: 100vh;
         }
 
+        .buttons-wrapper {
+            flex-direction: row;
+            margin-top: 50px;
 
-
-        .character {
-            display: flex;
         }
     }
 `

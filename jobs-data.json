@@ -23,8 +23,8 @@
     },
     {
         "id": 3,
-        "titlePT": "DoctoCare Front End",
-        "titleEN": "DoctoCare Front End",
+        "titlePT": "DoctorCare Front End",
+        "titleEN": "DoctorCare Front End",
         "descriptionPT": "Front End mobile first de aplicação para divulgação de clinica médica e marcação de consultas. Foi utilizado TypeScript, React, Sass, Vite, entre outras tecnologias para construção desse front end.",
         "descriptionEN": "Front End mobile first application for publicizing medical clinics and scheduling appointments. TypeScript, React, Sass, Vite, among other technologies were used to build this front end.",
         "linkDemo": "https://juliodoctorcare.netlify.app/",

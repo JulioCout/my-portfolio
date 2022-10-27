@@ -20,3 +20,15 @@ h3 {
   line-height: 38px;
   color: #E2E2E5;
 }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: black;
+  width: 100vw;
+
+  font-size: 14px;
+  line-height: 18px
+}

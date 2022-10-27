@@ -10,8 +10,6 @@ export const Container = styled.div`
     background-color: #161616;
     border-radius: 64px;
     width: 100vw;
-
-    margin-top: -50px;
   }
 
   .skills-content {

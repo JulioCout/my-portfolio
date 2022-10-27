@@ -8,48 +8,40 @@ export const Container = styled.div`
         justify-content: center;
         align-items: center;
         width: 100vw;
-        background-color: #0294b7;
-        background-image: linear-gradient(19deg, #4A2FBD 20%, #0294b7 100%);
+        background-color: #FFFFFF;
+        padding: 60px 20px;
+        gap: 40px;
     }
 
     .text-container {
         margin-bottom: 30px;
-        padding: 60px 20px;
         max-width: 600px;
+    }
+    
+    .about-title {
+        color: #000000;
+        font-weight: 600;
     }
 
     .about-text {
-        font-weight: 300;
+        font-weight: 400;
         font-size: 18px;
         line-height: 24px;
         letter-spacing: 0.01em;
-        color: #edededee;
+        color: #000000;
 
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     img {
-        width: 375px;
-        height: 375px;
-        animation: updown 3s linear infinite;
-    }
-
-    @keyframes updown {
-        0% {
-            transform: translateY(-20px);
-        }
-        50% {
-            transform: translateY(20px);
-        }
-        100% {
-            transform: translateY(-20px);
-        }
+        width: 250px;
+        height: 250px;
     }
 
     @media screen and (min-width: 750px) {
         .aboutSection-body {
             flex-direction: row;
-            gap: 30px
+            gap: 70px
         }
 
         .text-container {

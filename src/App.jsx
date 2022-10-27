@@ -17,9 +17,13 @@ function App() {
 
         <NavBar setGlobalLangPortuguese={setGlobalLangPortuguese} />
         <HeaderSection globalLangPortuguese={globalLangPortuguese} />
+        <AboutSection globalLangPortuguese={globalLangPortuguese} />
         <SkillsSection globalLangPortuguese={globalLangPortuguese} />        
         <ProjectSection globalLangPortuguese={globalLangPortuguese} />
-        <AboutSection globalLangPortuguese={globalLangPortuguese} />
+
+        <footer>
+          <p>Coded by Julio Coutinho</p>
+        </footer>
 
     </div>
   )

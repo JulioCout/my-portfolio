@@ -1,17 +1,20 @@
 import { Container } from "./styles"
 
-import footerImg from "../../assets/Saly-13.png"
+import footerImg from "../../assets/profile-pic.png"
 
 export function AboutSection({ globalLangPortuguese }) {
     
     return(
         <Container>
             <div id="about" className="aboutSection-body">
+
+                <img src={footerImg} className="character" alt="" />
+
                 <div className="text-container">
-                    <h2>{globalLangPortuguese ? "Sobre mim" : "About me"}</h2>
+                    <h2 className="about-title">{globalLangPortuguese ? "Sobre mim" : "About me"}</h2>
                     <p className="about-text">
                         {
-                            globalLangPortuguese ? "Pós-Graduado em Engenharia de Software com experiência em projetos para Web com foco em Front End com JavaScript, HTML, CSS e React JS. Além disso, possuo conhecimentos em Scrum, TypeScript, Git, Sass, Styled Components, Figma, NodeJs, SQL entre outras tecnologias e bibliotecas."
+                            globalLangPortuguese ? "Pós-Graduado em Engenharia de Software com experiência em projetos para Web com foco em Front End com JavaScript, HTML, CSS e React. Além disso, possuo conhecimentos em Scrum, TypeScript, Git, Sass, Styled Components, Figma, NodeJs, SQL entre outras tecnologias e bibliotecas."
                             :
                             "Postgraduate in Software Engineering with experience in Web projects focused on Front End with JavaScript, HTML, CSS and React. Also, I have knowledge in Scrum, TypeScript, Git, Sass, Styled-Components, Figma, NodeJs, SQL among other technologies and libraries."
                         }
@@ -26,7 +29,6 @@ export function AboutSection({ globalLangPortuguese }) {
                     </p>
                 </div>
 
-                <img src={footerImg} className="character" alt="" />
             </div>
         </Container>
     )
