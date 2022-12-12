@@ -1,6 +1,6 @@
 import { Container } from "./styles"
 
-import footerImg from "../../assets/profile-pic.png"
+import profileImg from "../../assets/profile-pic.png"
 
 export function AboutSection({ globalLangPortuguese }) {
     
@@ -8,7 +8,7 @@ export function AboutSection({ globalLangPortuguese }) {
         <Container>
             <div id="about" className="aboutSection-body">
 
-                <img src={footerImg} className="character" alt="" />
+                <img src={profileImg} className="character" alt="" />
 
                 <div className="text-container">
                     <h2 className="about-title">{globalLangPortuguese ? "Sobre mim" : "About me"}</h2>

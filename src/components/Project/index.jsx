@@ -10,7 +10,7 @@ export function Project({ title, description, linkDemo, linkGit, thumbnail }) {
 
                     <h2>{ title }</h2>
 
-                    <p>{ description }</p>            
+                    <p>{ description }</p>
         
                     <div className="buttons-wrapper">
 
