@@ -33,9 +33,12 @@ export const Container = styled.div`
       width: 85vw;
     }
 
-    .skills-content {
+    .skills-content h3 {
+      text-align: left;
+    }
+
+    .content-wrapper {
       flex-direction: row;
-      gap: 100px;
     }
   }
 `

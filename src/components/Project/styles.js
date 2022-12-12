@@ -1,123 +1,90 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-/*Card */
+/*Card*/
 .card {
-  width: 350px;
-  height: 250px;
-  border-radius: 12px;
-  position: relative;
-  box-shadow: 0px 2px 5px rgba(35,35,35,0.3);
-  transition: box-shadow .3s ease-in-out;
-}
-   
-/*Image*/
-.card-img {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  transition: transform .3s ease-in-out;
-  z-index: 2;
-  border-radius: 12px;
-  overflow: hidden;
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+
+    background-image: url(${props => props.thumbnail});
+    background-size: cover;
+    background-repeat: none;
+
+    color: #ffffff;
 }
 
-.card-img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.card-content {
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-   
-/*Buttons*/
-.button-list {
-  position: absolute;
-  bottom: 0;
+.card-content h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.card-content p {
+    font-size: 14px;
+}
+
+.card-content:hover {
+    opacity: 100;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Button */
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
   display: flex;
-  justify-content: center;
-  gap: 50px;
-  width: 100%;
-  padding: 0 1rem;
-  transform: translateY(-200%);
-  z-index: 3;
-}
-   
-.button-list button {
-  cursor: pointer;
-  opacity: 0;
-  transition: all .3s ease-in;
-}
-
-.cssbuttons {
-  display: flex;
+  gap: 6px;
   align-items: center;
-  font-family: inherit;
-  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   font-size: 16px;
-  padding: 0.7em 1.4em 0.7em 1.1em;
-  color: black;
-  background: #837f83;
-  background: linear-gradient(315deg, #837f83 0%, #eeeeee 82%);
-  border: none; 
-  box-shadow: 0 0.7em 1.5em -0.5em #837f83;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #2196f3;
+  background: none;
+  border: 1px solid #2196f3;
   letter-spacing: 0.05em;
-  border-radius: 20em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s ease-in;
  }
-
- .cssbuttons svg {
-  margin-right: 6px;
- }
- 
- .cssbuttons:hover {
-  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
- }
- 
- .cssbuttons:active {
-  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
- }
-
- .cssbuttons:focus {
-  outline: none;
- }
-   
-/*Text*/
-ul {
-  list-style: none;
-}
-   
-h2 {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 35px;
-  color: #edededee;
-  margin: 12px 0 7px;
-}
-  
-p {
-  width: 350px;
-  font-weight: 100;
-  font-size: 16px;
-  line-height: 24px;
-  color: #edededee;
-}
    
 /* Hover */
-.card:hover {
-  box-shadow:  -5px -5px 5px #0d0e10,
-                5px 5px 5px #353a42;
-      
+.button:hover {
+  background: #0b81de;
+  color: #FFFFFF;
 }
 
-.card:hover .button-list li button {
-  transform: translateY(-5%);
-  opacity: 1;
+@media screen and (min-width: 750px) {
+ 
+.card {
+    width: 582px;
+    height: 317px;
 }
-   
-.card:hover .button-list li button:nth-child(1) {
-  transition-delay: 0s;
+
+.card-content {
+    padding: 40px;
 }
-   
-.card:hover .button-list li button:nth-child(2) {
-  transition-delay: .2s;
+
+.card-content p {
+    font-size: 16px;
+}
+
 }
 `

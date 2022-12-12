@@ -7,7 +7,7 @@
         "descriptionEN": "Front End for application to save notes and useful links. I used React and Styled Components in addition to other technologies to build this front end",
         "linkDemo": "https://julionotes.netlify.app/",
         "linkGit": "https://github.com/JulioCout/Notes_Frontend",
-        "thumbnail": "https://i.imgur.com/wDmBMVU.png",
+        "thumbnail": "./src/assets/thumbnails/notesfront-thumbnail.png",
         "tag": "frontend"
     },
     {
@@ -18,7 +18,7 @@
         "descriptionEN": "Back End for application to save notes and useful links. I used NodeJS, Express, Sqlite and Jest, in addition to other technologies to build this Back end.",
         "linkDemo": "https://julionotes.netlify.app/",
         "linkGit": "https://github.com/JulioCout/Notes_Backend",
-        "thumbnail": "https://i.imgur.com/n47MqKH.png",
+        "thumbnail": "./src/assets/thumbnails/notesback-thumbnail.png",
         "tag": "backend"
     },
     {
@@ -29,7 +29,7 @@
         "descriptionEN": "Front End mobile first application for publicizing medical clinics and scheduling appointments. TypeScript, React, Sass, Vite, among other technologies were used to build this front end.",
         "linkDemo": "https://juliodoctorcare.netlify.app/",
         "linkGit": "https://github.com/JulioCout/doctorCare",
-        "thumbnail": "https://i.imgur.com/wSGwX1s.png",
+        "thumbnail": "./src/assets/thumbnails/doctorCare-thumbnail.png",
         "tag": "frontend"
     },
     {
@@ -40,7 +40,7 @@
         "descriptionEN": "Mobile-first image gallery that consumes the Unsplash API and displays the searched images. JavaScript, React, Sass, among other technologies were used to build this Gallery.",
         "linkDemo": "https://julio-image-gallery.netlify.app/",
         "linkGit": "https://github.com/JulioCout/image-gallery",
-        "thumbnail": "https://i.imgur.com/CIzIjB1.png",
+        "thumbnail": "./src/assets/thumbnails/imageGallery-thumbnail.png",
         "tag": "frontend"
     },
     {
@@ -51,7 +51,7 @@
         "descriptionEN": "Component for displaying cards that adapts to up to 3 screen sizes.",
         "linkDemo": "https://jobs-component.netlify.app/",
         "linkGit": "https://github.com/JulioCout/responsive_grid",
-        "thumbnail": "https://i.imgur.com/lfE0utf.png",
+        "thumbnail": "./src/assets/thumbnails/responsiveComponent-thumbnail.png",
         "tag": "frontend"
     },
     {
@@ -62,7 +62,7 @@
         "descriptionEN": "Tool that consumes the Github API to save your favorite profiles.",
         "linkDemo": "https://gitfavorites.netlify.app/",
         "linkGit": "https://github.com/JulioCout/gitfav",
-        "thumbnail": "https://i.imgur.com/uDsB9Dx.png",
+        "thumbnail": "./src/assets/thumbnails/gitfav-thumbnail.png",
         "tag": "tools"
     },
     {
@@ -73,7 +73,7 @@
         "descriptionEN": "Component for calculating body mass index.",
         "linkDemo": "https://imc-component.netlify.app/",
         "linkGit": "https://github.com/JulioCout/imc-component",
-        "thumbnail": "https://i.imgur.com/ft547Cu.png",
+        "thumbnail": "./src/assets/thumbnails/imcComponent-thumbnail.png",
         "tag": "tools"
     }
 ]

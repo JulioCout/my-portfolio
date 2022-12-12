@@ -1,25 +1,22 @@
 import { Container } from "./styles";
 
 
-export function Skill({ icon, description }) {
+export function Skill({ icon, title, description }) {
 
     return(
         <Container>
+            
             <div className="card">
 
-                <div className="header">
-                    <div className="img-box">
-                        <img src={icon} alt="" />
-                    </div>
+                <div className="card-head">
+                    <img src={icon} alt="" />
+                    <h2>{ title}</h2>
                 </div>
 
-                <div className="content">
-                    <p>
-                        { description }
-                    </p>
-                </div>
-                
+                <p>{ description }</p>
+
             </div>
+
         </Container>
     )
 }

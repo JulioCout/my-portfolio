@@ -2,51 +2,71 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
-  .card {
+/*Card*/
+.card {
+    width: 150px;
+    height: 150px;
+    border-radius: 7px;
+    overflow: hidden;
+
+    /* background-color: #021662;
+    background-image: linear-gradient(225deg, #021662 0%, #0800d8 50%, #000781 100%); */
+
+    background-color: #293350;
+    background-image: linear-gradient(225deg, #293350 0%, #605e92 50%, #2d335e 100%);
+
     display: flex;
-    align-items: center;
-    transition: all 0.3s ease-out;
+    flex-direction: column;
+
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card .header {
+.card-head {
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 120px;
-    z-index: 2;
-    background: #353535;
-    background: #353535;
-    box-shadow: inset 14px 14px 14px #282828,
-            inset -14px -14px 14px #424242;
-    border-radius: 50%;
+    gap: 8px;
+    transition: all 0.3s ease-in-out;
 }
 
-.card .content {
-    width: 250px;
-    height: 110px;
-    z-index: 1;
-    margin-left: -55px;
-    padding-right: 8px;
-    border-radius: 0 15px 15px 0;
+img {
+    height: 75px;
+    width: 75px;
+    transition: all 0.3s ease-in-out;
+}
+
+p {
+    display: none;
+    transition: all 0.3s ease-in-out;
+    color: beige;
+    font-size: 12px;
+}
+
+h2 {
+    color: beige;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+/*Hover*/
+.card:hover .card-head {
+    height: 20%;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.card:hover img {
+    width: 30px;
+    height: 30px;
+}
+
+.card:hover p {
     display: flex;
-    align-items: center;
-    background: rgb(151,151,151);
-    background: linear-gradient(28deg, rgba(151,151,151,1) 23%, rgba(188,188,188,1) 50%, rgba(151,151,151,1) 80%); 
-}
-
-.card .content p {
-    margin-left: 60px;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 19px;
-    letter-spacing: 0.01em;
-    color: #121212;
-    text-align: center;
+    margin-top: 15px;
 }
 
 `
