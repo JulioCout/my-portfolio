@@ -38,9 +38,10 @@ export function NavBar({ setGlobalLangPortuguese }) {
             <div className="links">
 
                 <a href="#init">{navLangPortuguese ? "Início" : "Home"}</a>
+                <a href="#about">{navLangPortuguese ? "Sobre" : "About"}</a>
                 <a href="#skills">{navLangPortuguese ? "Habilidades" : "Skills"}</a>
                 <a href="#projects">{navLangPortuguese ? "Projetos" : "Projects"}</a>
-                <a href="#about">{navLangPortuguese ? "Sobre" : "About"}</a>
+                
 
             </div>
 
