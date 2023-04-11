@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "titlePT": "Notes Front End",
-        "titleEN": "Notes Front End",
-        "descriptionPT": "Front End de aplicação para guardar anotações e links úteis. Foi utilizado React e Styled Components para construção desse front end",
-        "descriptionEN": "Front End for application to save notes and useful links. I used React and Styled Components in addition to other technologies to build this front end",
-        "linkDemo": "https://julionotes.netlify.app/",
-        "linkGit": "https://github.com/JulioCout/Notes_Frontend",
-        "thumbnail": "https://i.imgur.com/wDmBMVU.png",
+        "titlePT": "Ecommerce",
+        "titleEN": "Ecommerce",
+        "descriptionPT": "Página resposiva de ecommerce de loja de roupas. Foi utilizado Vue e Sass para construção desse front end",
+        "descriptionEN": "Responsive e-commerce page for clothing store. I used Vue and Sass in addition to other technologies to build this front end",
+        "linkDemo": "https://julios-vue-ecommerce.netlify.app",
+        "linkGit": "https://github.com/JulioCout/vue-ecommerce",
+        "thumbnail": "https://i.imgur.com/z4vJpyR.png",
         "tag": "frontend"
     },
     {
