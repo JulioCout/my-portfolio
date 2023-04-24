@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "titlePT": "Ecommerce",
-        "titleEN": "Ecommerce",
-        "descriptionPT": "Página resposiva de ecommerce de loja de roupas. Foi utilizado Vue e Sass para construção desse front end",
+        "titlePT": "E-commerce",
+        "titleEN": "E-commerce",
+        "descriptionPT": "Página resposiva de e-commerce de roupas. Foi utilizado Vue e Sass para construção desse front end.",
         "descriptionEN": "Responsive e-commerce page for clothing store. I used Vue and Sass in addition to other technologies to build this front end",
         "linkDemo": "https://julios-vue-ecommerce.netlify.app",
         "linkGit": "https://github.com/JulioCout/vue-ecommerce",
@@ -12,14 +12,14 @@
     },
     {
         "id": 2,
-        "titlePT": "Notes Back End",
-        "titleEN": "Notes Back End",
-        "descriptionPT": "Back End de aplicação para guardar anotações e links úteis. Foi utilizado NodeJS, Express, Sqlite e Jest, alem de outras tecnologias para construção desse Back end.",
-        "descriptionEN": "Back End for application to save notes and useful links. I used NodeJS, Express, Sqlite and Jest, in addition to other technologies to build this Back end.",
-        "linkDemo": "https://julionotes.netlify.app/",
-        "linkGit": "https://github.com/JulioCout/Notes_Backend",
-        "thumbnail": "https://i.imgur.com/ATKBF3i.png",
-        "tag": "backend"
+        "titlePT": "E-commerce 2",
+        "titleEN": "E-commerce 2",
+        "descriptionPT": "Página de e-commerce de loja de material esportivo. Foi utilizado Javascript com Vue e Vuetify para construção desse front end.",
+        "descriptionEN": "Responsive e-commerce page for sporting goods store. I used Javascript, Vue and Vuetify, in addition to other technologies to build this front end.",
+        "linkDemo": "https://julios-vue-ecommerce2.netlify.app/",
+        "linkGit": "https://github.com/JulioCout/vue-ecommerce-2",
+        "thumbnail": "https://i.imgur.com/fTNIOoV.png",
+        "tag": "frontend"
     },
     {
         "id": 3,
