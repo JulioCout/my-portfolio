@@ -4,16 +4,12 @@ export const Container = styled.div`
 
 /*Card*/
 .card {
-    width: 150px;
-    height: 150px;
-    border-radius: 7px;
+    width: 190px;
+    height: 200px;
+    border-radius: 18px;
     overflow: hidden;
 
-    /* background-color: #021662;
-    background-image: linear-gradient(225deg, #021662 0%, #0800d8 50%, #000781 100%); */
-
-    background-color: #293350;
-    background-image: linear-gradient(225deg, #293350 0%, #605e92 50%, #2d335e 100%);
+    background-color: #fefefe;
 
     display: flex;
     flex-direction: column;
@@ -34,20 +30,19 @@ export const Container = styled.div`
 }
 
 img {
-    height: 75px;
-    width: 75px;
+    height: 100px;
+    width: 100px;
     transition: all 0.3s ease-in-out;
 }
 
 p {
     display: none;
     transition: all 0.3s ease-in-out;
-    color: beige;
-    font-size: 12px;
+    color: #0f2f57;
+    font-size: 14px;
 }
 
 h2 {
-    color: beige;
     font-size: 16px;
     transition: all 0.3s ease-in-out;
 }

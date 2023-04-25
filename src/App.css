@@ -1,24 +1,24 @@
 .App {
   width: 100vw;
   align-self: center;
-  background-color: #121212;  
+  background-color: #121212;
   display: flex;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 h2 {
   font-weight: 500;
   font-size: 40px;
   line-height: 42px;
-  color: #E2E2E5;
+  color: #0f2f57;
 }
 
 h3 {
   font-weight: 300;
   font-size: 26px;
   line-height: 38px;
-  color: #E2E2E5;
+  color: #0f2f57;
 }
 
 footer {
@@ -30,5 +30,5 @@ footer {
   width: 100vw;
 
   font-size: 14px;
-  line-height: 18px
+  line-height: 18px;
 }
