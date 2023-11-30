@@ -20,7 +20,7 @@ export function HeaderSection({ globalLangPortuguese }) {
                         <a href="https://github.com/JulioCout" target="_blank">
                         <ButtonGithub />
                         </a>
-                        <a href={globalLangPortuguese ? "https://drive.google.com/file/d/1j677c9W_adqSCdfju4Z1gYosQnZRLTTe/view?usp=sharing" : "https://drive.google.com/file/d/1ZUcwcLg7b6cQgRdzVhhJgK_D58mE7XIO/view?usp=sharing"} target="_blank">
+                        <a href={globalLangPortuguese ? "https://drive.google.com/file/d/1Ym2oTLmGI-xz8-IhiVAdipvTPf08IPHo/view?usp=sharing" : "https://drive.google.com/file/d/1Ym2oTLmGI-xz8-IhiVAdipvTPf08IPHo/view?usp=sharing"} target="_blank">
                         <ButtonResume globalLangPortuguese={globalLangPortuguese} />
                         </a>
                     </div>
