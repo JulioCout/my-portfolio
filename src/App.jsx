@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 
 import { SkillsSection } from "./components/SkillsSection"
-import { ProjectSection } from "./components/ProjectSection"
+//import { ProjectSection } from "./components/ProjectSection"
 import { AboutSection } from './components/AboutSection'
 import { HeaderSection } from './components/HeaderSection'
 import { NavBar } from "./components/NavBar"
@@ -19,7 +19,7 @@ function App() {
         <HeaderSection globalLangPortuguese={globalLangPortuguese} />
         <AboutSection globalLangPortuguese={globalLangPortuguese} />
         <SkillsSection globalLangPortuguese={globalLangPortuguese} />        
-         <!-- <ProjectSection globalLangPortuguese={globalLangPortuguese} /> -->
+         //<ProjectSection globalLangPortuguese={globalLangPortuguese} />
 
         <footer>
           <p>Coded by Julio Coutinho</p>
