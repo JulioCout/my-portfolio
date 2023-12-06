@@ -19,7 +19,7 @@ function App() {
         <HeaderSection globalLangPortuguese={globalLangPortuguese} />
         <AboutSection globalLangPortuguese={globalLangPortuguese} />
         <SkillsSection globalLangPortuguese={globalLangPortuguese} />        
-        <ProjectSection globalLangPortuguese={globalLangPortuguese} />
+         <!-- <ProjectSection globalLangPortuguese={globalLangPortuguese} /> -->
 
         <footer>
           <p>Coded by Julio Coutinho</p>
