@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 
-import { SkillsSection } from "./components/SkillsSection"
+
+import { MaintenanceSection } from './components/MaintenanceSection'
+
+// import { SkillsSection } from "./components/SkillsSection"
 // import { ProjectSection } from "./components/ProjectSection"
-import { AboutSection } from './components/AboutSection'
-import { HeaderSection } from './components/HeaderSection'
-import { NavBar } from "./components/NavBar"
+// import { AboutSection } from './components/AboutSection'
+// import { HeaderSection } from './components/HeaderSection'
+// import { NavBar } from "./components/NavBar"
 
 function App() {
 
@@ -14,11 +17,12 @@ function App() {
   return (
       <div className="App">
         
+        <MaintenanceSection />
 
-        <NavBar setGlobalLangPortuguese={setGlobalLangPortuguese} />
-        <HeaderSection globalLangPortuguese={globalLangPortuguese} />
-        <AboutSection globalLangPortuguese={globalLangPortuguese} />
-        <SkillsSection globalLangPortuguese={globalLangPortuguese} />        
+        {/* <NavBar setGlobalLangPortuguese={setGlobalLangPortuguese} /> */}
+        {/* <HeaderSection globalLangPortuguese={globalLangPortuguese} /> */}
+        {/* <AboutSection globalLangPortuguese={globalLangPortuguese} /> */}
+        {/* <SkillsSection globalLangPortuguese={globalLangPortuguese} />         */}
         {/* <ProjectSection globalLangPortuguese={globalLangPortuguese} /> */}
 
         <footer>
